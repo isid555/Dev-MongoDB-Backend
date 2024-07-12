@@ -1,5 +1,5 @@
 const express = require('express')
-var cors = require('cors')
+let cors = require('cors')
 
 require('dotenv').config();
 
@@ -16,11 +16,11 @@ app.use('/api/users' , userRoutes)
 
 
 
-const PORT = process.env.PORT || 8081
+const PORT =8081
 
 
 
 
 app.listen(PORT , ()=>{
-    console.log("server running")
+    console.log("server running at  " + PORT)
 })
